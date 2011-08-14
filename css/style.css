@@ -1,0 +1,45 @@
+body {
+	background: #232927;
+	font: 100% "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif;
+	color: #E3D7BF;
+}
+
+footer {
+	height: 100px;
+	padding-top: 50px;
+	font-size: 70%;
+	color: #777;
+}
+
+div#container {
+	margin: 0 auto;
+	width: 95%;
+}
+
+ul, li {
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Serif", serif;
+}
+
+.high {
+	font-size: 250%;
+	color: #B43D3D;
+}
+
+.medium {
+	font-size: 200%;
+	color: #F8BB00;
+}
+
+.low {
+	font-size: 150%;
+	color: #428BDD;
+}
+
+.faint {
+	font-size: 100%;
+	color: #1DC116;
+}

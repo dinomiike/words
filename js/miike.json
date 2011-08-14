@@ -1,0 +1,34 @@
+{
+	"words": [
+		{
+			"item": "mansuetude",
+			"context": "mildness, gentleness",
+			"color": "#B43D3D",
+			"priority": "high"
+		},
+		{
+			"item": "libation",
+			"context": "the act of pouring a liquid (usually wine) either on the ground or on a victim in sacrifice some diety",
+			"color": "#F8BB10",
+			"priority": "medium"
+		},
+		{
+			"item": "apposite",
+			"context": "being of striking appropriateness and relevence, apt",
+			"color": "#E3D7BF",
+			"priority": "low"
+		},
+		{
+			"item": "quaff",
+			"context": "to drink (especially an intoxicating beverage to copious amounts) hearty enjoyment",
+			"color": "#1DC116",
+			"priority": "low"
+		},
+		{
+			"item": "moxie",
+			"context": "vigor, pep, courage and aggressiveness, skill, know-how",
+			"color": "#428BDD",
+			"priority": "faint"
+		}
+	]
+}
