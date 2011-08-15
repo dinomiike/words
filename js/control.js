@@ -11,7 +11,14 @@ $(document).ready(function() {
 
 			// Loop through each word in the response and format them
 			$(jsonResponse.words).each(function(key, val) {
-				$("section#words ul").append("<li class='" + val.priority + "'>" + val.item + "</li>\r\n");
+				$("section#words ul").append("<li><a href='#' class='" + val.priority + "' title='" + val.context + "'>" + val.item + "</a></li>\r\n");
+			});
+
+			$("li a").click(function (event) {
+				event.preventDefault();
+				//alert(event.type);
+				//alert(this.text);
+				jsonResponse.words[0].priority = "medium";
 			});
 		}
 	});

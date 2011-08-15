@@ -4,6 +4,10 @@ body {
 	color: #E3D7BF;
 }
 
+header {
+	font-size: 125%;
+}
+
 footer {
 	height: 100px;
 	padding-top: 50px;
@@ -25,21 +29,25 @@ ul, li {
 }
 
 .high {
+	text-decoration: none;
 	font-size: 250%;
 	color: #B43D3D;
 }
 
 .medium {
+	text-decoration: none;
 	font-size: 200%;
 	color: #F8BB00;
 }
 
 .low {
+	text-decoration: none;
 	font-size: 150%;
 	color: #428BDD;
 }
 
 .faint {
+	text-decoration: none;
 	font-size: 100%;
 	color: #1DC116;
 }
