@@ -20,6 +20,10 @@ div#container {
 	width: 95%;
 }
 
+section#context {
+	height: 300px;
+}
+
 ul, li {
 	list-style: none;
 	display: inline;
@@ -28,26 +32,50 @@ ul, li {
 	font-family: "PT Serif", serif;
 }
 
-.high {
+.highPlus {
 	text-decoration: none;
-	font-size: 250%;
+	font-size: 350%;
 	color: #B43D3D;
 }
 
-.medium {
+.highMinus {
+	text-decoration: none;
+	font-size: 300%;
+	color: #B43D3D;
+}
+
+.mediumPlus {
+        text-decoration: none;
+        font-size: 250%;
+        color: #F8BB00;
+}
+
+
+.mediumMinus {
 	text-decoration: none;
 	font-size: 200%;
 	color: #F8BB00;
 }
 
-.low {
+.lowPlus {
+        text-decoration: none;
+        font-size: 150%;
+        color: #428BDD;
+}
+
+
+.lowMinus {
 	text-decoration: none;
-	font-size: 150%;
+	font-size: 100%;
 	color: #428BDD;
 }
 
 .faint {
 	text-decoration: none;
-	font-size: 100%;
+	font-size: 80%;
 	color: #1DC116;
+}
+
+.off {
+	display: none;
 }
