@@ -1,7 +1,13 @@
 <?php
-$data = $_GET["data"];
+$file = $_POST["file"];
+$data = $_POST["data"];
 
-$fp = fopen("miike.json", "w");
+if ($file == "" || $data == "") {
+	echo "invalid request from the words form";
+	exit();
+}
+
+$fp = fopen("js/".$file, "w");
 fwrite($fp, $data);
 fclose($fp);
 ?>

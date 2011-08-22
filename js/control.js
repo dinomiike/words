@@ -12,6 +12,7 @@ $(document).ready(function() {
 	// Set the complete JSON response
 	var response = $.ajax({
 		url: "js/miike.json",
+		cache: false,
 		error: function() {
 			alert("Error: file not found");
 		},
@@ -41,23 +42,35 @@ $(document).ready(function() {
 
 				event.preventDefault();
 
-				console.log("Current Class: " + currentClass);
-				console.log("Change Class: " + changeClass);
-				//console.log(styles[styles.indexOf(this.className) - 1]);
-				//console.log(this.text);
-				//console.log(jsonResponse.words[this.id].priority);
+				//console.log("Current Class: " + currentClass);
+				//console.log("Change Class: " + changeClass);
 
 				// Data Side: Set the Object to hold the new class
-				jsonResponse.words[this.id].priority = changeClass;
+
+				// If the word is being set to "off" status, remove it from the object, otherwise set to the new class
+				if (changeClass == "off") {
+					jsonResponse.words.splice(this.id);
+				} else {
+					jsonResponse.words[this.id].priority = changeClass;
+				}
+
 				// Asynchronously update the original .JSON file
-				// somehow!
+				var dataCollection = "file=miike.json&data=" + JSON.stringify(jsonResponse);
+				$.ajax({
+					type: "POST",
+					url: "update_json.php",
+					data: dataCollection,
+					success: function () {
+						console.log("data sent to PHP consists of: \r\n" + dataCollection);
+					}
+				});
 
 				// Presentation Side: Remove the old class and add the new one
 				$(this).removeClass();
 				$(this).addClass(changeClass);
 
-				console.log("object now has: " + jsonResponse.words[this.id].priority);
-				console.log(JSON.stringify(jsonResponse));
+				//console.log("object now has: " + jsonResponse.words[this.id].priority);
+				//console.log(JSON.stringify(jsonResponse));
 			});
 		}
 	});
