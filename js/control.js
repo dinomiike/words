@@ -1,4 +1,15 @@
 $(document).ready(function() {
+	function getParameterByName(name) {
+        	var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        	return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+	}
+
+	// Load user
+	var user = getParameterByName("user");
+	if (user == null) {
+		window.location = "negative.html";
+	}
+	
 	var styles = new Array();
 	styles[0] = "off";
 	styles[1] = "faint";
@@ -11,7 +22,7 @@ $(document).ready(function() {
 
 	// Set the complete JSON response
 	var response = $.ajax({
-		url: "js/miike.json",
+		url: "js/"+user+".json",
 		cache: false,
 		error: function() {
 			alert("Error: file not found");
@@ -55,7 +66,7 @@ $(document).ready(function() {
 				}
 
 				// Asynchronously update the original .JSON file
-				var dataCollection = "file=miike.json&data=" + JSON.stringify(jsonResponse);
+				var dataCollection = "file="+user+".json&data=" + JSON.stringify(jsonResponse);
 				$.ajax({
 					type: "POST",
 					url: "update_json.php",
