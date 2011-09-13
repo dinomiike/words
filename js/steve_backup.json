@@ -1,0 +1,34 @@
+{
+    "words": [
+        {
+            "item": "Conduct disorder",
+            "context": "trauncy, defiance to authority",
+            "color": "#B43D3D",
+            "priority": "highPlus"
+        },
+        {
+            "item": "Generalized anxiety disorder",
+            "context": "inability in day-to-day functioning caused by anxiety",
+            "color": "#B43D3D",
+            "priority": "highPlus"
+        },
+        {
+            "item": "Major depressive disorder",
+            "context": "severe depressive episode that lasts 2 weeks",
+            "color": "#B43D3D",
+            "priority": "highPlus"
+        },
+        {
+            "item": "Bipolar disorder",
+            "context": "mixed episodes of mania and depression that lasts at least two weeks",
+            "color": "#B43D3D",
+            "priority": "highPlus"
+        },
+        {
+            "item": "PHP",
+            "context": "PHP Hypertext Preprocessor",
+            "color": "#B43D3D",
+            "priority": "highPlus"
+        }
+    ]
+}

@@ -2,7 +2,7 @@ $(document).ready(function() {
 	// Load user
 	var user = getParameterByName("user");
 	if (user == null) {
-		window.location = "negative.html";
+		window.location = "/welcome";
 	}
 	
 	var styles = new Array();
@@ -20,7 +20,8 @@ $(document).ready(function() {
 		url: "js/"+user+".json",
 		cache: false,
 		error: function() {
-			alert("Error: file not found");
+			//alert("Error: file not found");
+			window.location = "/welcome";
 		},
 		success: function() {
 			// Set the response text of the ajax call to jsonResponse

@@ -36,44 +36,77 @@ ul, li {
 	text-decoration: none;
 	font-size: 350%;
 	color: #B43D3D;
+	padding-right: 20px;
+}
+
+.highPlus:hover {
+	text-decoration: underline;
 }
 
 .highMinus {
 	text-decoration: none;
 	font-size: 300%;
 	color: #B43D3D;
+	padding-right: 20px;
+}
+
+.highMinus:hover {
+	text-decoration: underline;
 }
 
 .mediumPlus {
         text-decoration: none;
         font-size: 250%;
         color: #F8BB00;
+	padding-right: 15px;
 }
 
+.mediumPlus:hover {
+	text-decoration: underline;
+}
 
 .mediumMinus {
 	text-decoration: none;
 	font-size: 200%;
 	color: #F8BB00;
+	padding-right: 15px;
+}
+
+.mediumMinus:hover {
+	text-decoration: underline;
 }
 
 .lowPlus {
         text-decoration: none;
         font-size: 150%;
         color: #428BDD;
+	padding-right: 10px;
 }
 
+.lowPlus:hover {
+	text-decoration: underline;
+}
 
 .lowMinus {
 	text-decoration: none;
 	font-size: 100%;
 	color: #428BDD;
+	padding-right: 10px;
+}
+
+.lowMinus:hover {
+	text-decoration: underline;
 }
 
 .faint {
 	text-decoration: none;
 	font-size: 80%;
 	color: #1DC116;
+	padding-right: 5px;
+}
+
+.faint:hover {
+	text-decoration: underline;
 }
 
 .off {
