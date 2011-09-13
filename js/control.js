@@ -2,7 +2,7 @@ $(document).ready(function() {
 	// Load user
 	var user = getParameterByName("user");
 	if (user == null) {
-		window.location = "/welcome";
+		window.location = "welcome/";
 	}
 	
 	var styles = new Array();
