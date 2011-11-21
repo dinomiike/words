@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	// Load user
 	var user = getParameterByName("user");
-	if (user == null) {
-		window.location = "welcome/";
+	if (user == null || user == "") {
+		window.location = "/words/welcome/";
 	}
 	
 	var styles = new Array();
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		cache: false,
 		error: function() {
 			//alert("Error: file not found");
-			window.location = "/welcome";
+			window.location = "/words/welcome";
 		},
 		success: function() {
 			// Set the response text of the ajax call to jsonResponse
